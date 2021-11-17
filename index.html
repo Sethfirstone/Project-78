@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="150px" height="200px">
+            <h4 id="family_member_name"></h4>
+            <button type="button" onclick="nextslide()">Next</button>
+           
+        </center>
+
+        <script>
+
+var images=[
+"https://www.pngitem.com/pimgs/m/131-1315257_stick-figure-dad-png-download-dad-stick-figure.png",
+"https://www.pinclipart.com/picdir/middle/21-211050_mom-clipart-stick-figure-family-of-four-png.png",
+"https://cdn.pixabay.com/photo/2014/04/02/11/04/girl-305399_960_720.png",
+"https://www.clipartkey.com/mpngs/m/233-2330892_freetoedit-stickman-grandpa-elder-male-man-grandpa-stickman.png",
+"https://listimg.pinclipart.com/picdir/s/399-3999336_freetoedit-stickman-grandma-female-elder-clipart.png",
+"https://webstockreview.net/images/boys-clipart-stick-figure-2.jpg",
+"https://i.postimg.cc/MKdhy06Z/family.jpg"
+
+];
+
+var i=0;
+function nextslide(){
+document.getElementById("family_member_image").src=images[i];
+i++;
+}
+
+        </script>
+    </body>
+</html>
